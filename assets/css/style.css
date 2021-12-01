@@ -1367,3 +1367,7 @@ p.form-message.error {
     border: 8px solid #fff;
     box-shadow: 0px 0px 30px rgb(0 0 0 / 20%);
 }
+
+.card-color {
+    background-color: #e6e6e6;
+}
