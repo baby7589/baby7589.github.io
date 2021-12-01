@@ -32,16 +32,15 @@ $(document).ready(function() {
     var servicesPadding = (windowHeight - servicesHeight) / 2 + "px";
 
     $('#about').css({ 'padding-top': aboutPadding, 'padding-bottom': aboutPadding })
-    $('#contact').css({ 'padding-top': footerPadding, 'padding-bottom': footerPadding })
     $('#services').css({ 'padding-top': servicesPadding, 'padding-bottom': servicesPadding })
 
 
 
     //setbg color for items
     $('.portfolio .item').each(function() {
-        var imagePath = $(this).find('div img').attr('src');
-        var axisX = $(this).find('div img').attr('data-axisX');
-        var axisY = $(this).find('div img').attr('data-axisY');
+        var imagePath = $(this).find('div').attr('src');
+        var axisX = $(this).find('div').attr('data-axisX');
+        var axisY = $(this).find('div').attr('data-axisY');
         backgroundPos = axisX + "% " + axisY + "%";
 
         $(this).css({
